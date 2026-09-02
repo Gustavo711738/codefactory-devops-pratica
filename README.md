@@ -1,1 +1,1 @@
-"# CodeFactory DevOps Pr†tica" 
+"# CodeFactory DevOps Pr√°tica" 
