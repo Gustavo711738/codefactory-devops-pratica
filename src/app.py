@@ -1,0 +1,1 @@
+"from flask import Flask, jsonify\n\napp = Flask(__name__)\n\n@app.route('/')\ndef index():\n    return jsonify({'message': 'Hello CodeFactory from Flask in Docker!'})\n\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=5000)" 
