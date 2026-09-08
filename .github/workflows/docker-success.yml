@@ -23,5 +23,5 @@ jobs:
 
       - name: Test endpoint
         run: |
-          sleep 5
+          sleep 15
           curl --fail http://localhost:5000/
