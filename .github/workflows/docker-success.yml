@@ -23,5 +23,12 @@ jobs:
 
       - name: Test endpoint
         run: |
-          sleep 20
-          curl --fail http://localhost:5000/
+          for i in {1..5}; do
+            if curl --fail http://localhost:5000/ | grep -q "Hello CodeFactory"; then
+              echo "Flask respondeu com sucesso!"
+              break
+            else
+              echo "Tentativa $i falhou, aguardando..."
+              sleep 5
+            fi
+          done
