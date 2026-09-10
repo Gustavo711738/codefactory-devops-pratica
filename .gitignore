@@ -1,1 +1,4 @@
-"__pycache__/\n.env\n.vscode\n.git\n" 
+__pycache__/
+.env
+.vscode
+.git
